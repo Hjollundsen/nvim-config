@@ -1,0 +1,14 @@
+# Neovim cache
+.undo
+.backup
+.swap
+shada
+.state
+.cache
+
+# Plugin managers
+pack/
+lazy-lock.json
+
+# OS junk
+.DS_Store
