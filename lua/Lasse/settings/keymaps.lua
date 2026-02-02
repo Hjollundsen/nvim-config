@@ -19,7 +19,8 @@ vim.keymap.set("v", ">", ">gv", opts) -- indent marked lines
 vim.keymap.set("x", "<leader>p", [["_dP]]) -- paste without losing what was in your clipboard (normal mode)
 vim.keymap.set("v", "p", '"_dp', opts) -- paste without losing what was in clipboard (visual mode)
 
-vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]]) -- delete without replacing what is in clipboard
+-- This line gave problems with other "<leader>d..." commands... If needed find another binding
+-- vim.keymap.set({ "n", "v" }, "<leader>d", [["_d]]) -- delete without replacing what is in clipboard
 
 -- clears search hl with double Esc
 vim.keymap.set("n",  "<Esc><Esc>", ":nohl<CR>", { desc = "Clear search hl", silent = true })
